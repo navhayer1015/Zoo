@@ -15,7 +15,7 @@ public class EnvironmentManager : MonoBehaviour
     public void SpawnEnvironment()
     {
         _currentEnvironment = Instantiate(_environments[_currentEnvironmentsIndex],Vector3.zero, Quaternion.identity);
-        _currentEnvironment.transform.localScale = new Vector3(7,7,7);
+        _currentEnvironment.transform.localScale = new Vector3(10,10,10);
         Camera.main.GetComponent<CameraOrbit>().target = _currentEnvironment;
     }
     

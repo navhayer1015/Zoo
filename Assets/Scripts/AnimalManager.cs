@@ -11,14 +11,14 @@ public class AnimalManager : MonoBehaviour
     [SerializeField] private int _currentAmimalIndex = 0;
     [SerializeField] List<GameObject> _animals;
     
-    [EasyButtons.Button]
+    [Button]
     public void SpawnAnimal()
     {
         _currentAnimal =  Instantiate(_animals[_currentAmimalIndex],Vector3.zero, Quaternion.identity);
-        var skinnedMeshRenderer = _currentAnimal.GetComponentInChildren<SkinnedMeshRenderer>();
-        var _animalPos = _currentAnimal.transform.position;
-        _animalPos = new Vector3(_animalPos.x, _animalPos.y + math.abs(skinnedMeshRenderer.bounds.size.y), _animalPos.z);
-        _currentAnimal.transform.position = _animalPos;
+        var boxCollider = _currentAnimal.GetComponentInChildren<BoxCollider>();
+        var animalPos = _currentAnimal.transform.position;
+        animalPos = new Vector3(animalPos.x, animalPos.y + math.abs(boxCollider.bounds.size.y), animalPos.z);
+        _currentAnimal.transform.position = animalPos;
     }
     [Button]
     public void Next()
