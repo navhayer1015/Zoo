@@ -14,19 +14,20 @@ public class Biome : MonoBehaviour
 {
     [SerializeField] BiomeType _biomeType;
     [Header("Animal Data")]
-    [SerializeField] List<GameObject> _animals;
+    [SerializeField] List<GameObject> _animals = new List<GameObject>();
     [SerializeField] GameObject _currentAnimal;
     [SerializeField] private int _currentAmimalIndex = 0;
     
     [Header("Environment Data")]
-    [SerializeField] List<GameObject>  _environments;
+    [SerializeField] List<GameObject>  _environments = new List<GameObject>();
     [SerializeField] GameObject _currentEnvironment;
     [SerializeField] private int _currentEnvironmentsIndex = 0;
     
     #region Animal Properties
+    [Button]
     public void SpawnAnimal()
     {
-        _currentAnimal = Instantiate(_animals[_currentAmimalIndex], Vector3.zero, Quaternion.identity);
+        _currentAnimal = Instantiate(_animals[_currentAmimalIndex], _currentEnvironment.transform.GetChild(0).transform.position, Quaternion.identity);
         var boxCollider = _currentAnimal.GetComponentInChildren<BoxCollider>();
         var animalPos = _currentAnimal.transform.position;
         animalPos = new Vector3(animalPos.x, animalPos.y + math.abs(boxCollider.bounds.size.y), animalPos.z);
@@ -84,7 +85,6 @@ public class Biome : MonoBehaviour
         {
             _animals.Add(animal as GameObject);
         }
-
         _currentAnimal = _animals[0];
     }
     public void LoadEnvironmentList()
