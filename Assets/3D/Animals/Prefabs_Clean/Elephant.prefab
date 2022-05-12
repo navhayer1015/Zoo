@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100008, guid: 9e9c8c5bbda655a48b36b528b5561630, type: 3}
       propertyPath: m_Name
-      value: Elephant Variant
+      value: Elephant
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 9e9c8c5bbda655a48b36b528b5561630, type: 3}
       propertyPath: m_RootOrder
@@ -66,7 +66,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 9e9c8c5bbda655a48b36b528b5561630, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: af472812a384a2d4582ffde45dfb0e89, type: 2}
+      objectReference: {fileID: 9100000, guid: 84219150a2e21054ba2efc26f9bbe87b, type: 2}
     - target: {fileID: 13700000, guid: 9e9c8c5bbda655a48b36b528b5561630, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
