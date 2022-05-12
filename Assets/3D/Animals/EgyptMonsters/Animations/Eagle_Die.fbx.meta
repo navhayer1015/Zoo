@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 8a39633eb9e08ba41b71ccaa82d782e6
-timeCreated: 1547397975
+guid: 47c6e8eb3f60b50418197ab2392c987c
+timeCreated: 1547870129
 licenseType: Store
 ModelImporter:
   serializedVersion: 22
@@ -73,8 +73,7 @@ ModelImporter:
     400062: joint8
     400064: joint9
     400066: ROOT
-    7400000: Eagle_damaged
-    7400002: Eagle_Damaged
+    7400000: Eagle_Die
     9500000: //RootNode
   externalObjects: {}
   materials:

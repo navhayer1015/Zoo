@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 221f97476fc29794da96ee45e1fb7f2e
-timeCreated: 1548173063
+guid: f7ea78066431db04a982f9f6e672a25e
+timeCreated: 1547999819
 licenseType: Store
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Eaglle_normal
+    100002: EagleSummon001
     100004: joint1
     100006: joint10
     100008: joint11
@@ -39,9 +39,8 @@ ModelImporter:
     100062: joint8
     100064: joint9
     100066: ROOT
-    100068: Eaglle_Normal
     400000: //RootNode
-    400002: Eaglle_normal
+    400002: EagleSummon001
     400004: joint1
     400006: joint10
     400008: joint11
@@ -74,15 +73,8 @@ ModelImporter:
     400062: joint8
     400064: joint9
     400066: ROOT
-    400068: Eaglle_Normal
-    2100000: 'Material #35'
-    2100002: 'Material #698'
-    4300000: Eaglle_normal
-    4300002: Eaglle_Normal
-    7400000: Take 001
+    7400000: Eagle_Fly
     9500000: //RootNode
-    13700000: Eaglle_normal
-    13700002: Eaglle_Normal
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -109,7 +101,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Eagle_Fly
+      takeName: Eagle_Fly
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

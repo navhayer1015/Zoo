@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 3cfcef396eab1df4d8eee0acbfa61495
-timeCreated: 1547397973
+guid: a68055efafaa62248abe534deac1efbd
+timeCreated: 1547397975
 licenseType: Store
 ModelImporter:
   serializedVersion: 22
@@ -73,12 +73,9 @@ ModelImporter:
     400062: joint8
     400064: joint9
     400066: ROOT
-    2100000: 'Material #36'
-    4300000: EagleSummon001
-    7400000: Take 001
-    7400002: Eagle_Leave
+    7400000: Eagle_damaged
+    7400002: Eagle_Damaged
     9500000: //RootNode
-    13700000: EagleSummon001
   externalObjects: {}
   materials:
     importMaterials: 1
