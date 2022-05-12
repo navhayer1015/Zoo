@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1728.3281, g: 1926.2444, b: 2991.0674, a: 1}
+  m_IndirectSpecularColor: {r: 1728.2883, g: 1923.5652, b: 2979.097, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -355,27 +355,27 @@ PrefabInstance:
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.94
+      value: 5.398017
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.41
+      value: 5.3883357
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.2
+      value: -1.1790504
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.12480891
+      value: -0.12480887
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.040506415
+      value: -0.040506396
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
@@ -385,7 +385,7 @@ PrefabInstance:
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3060276
+      value: -0.30602762
       objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678724, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
@@ -407,11 +407,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hex Orbit Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 3065543203454678726, guid: 49b2e50264140461282e0cfbb3aececc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065543203454678727, guid: 49b2e50264140461282e0cfbb3aececc,
+        type: 3}
+      propertyPath: m_Follow
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3065543203454678727, guid: 49b2e50264140461282e0cfbb3aececc,
+        type: 3}
+      propertyPath: m_LookAt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3065543203454678727, guid: 49b2e50264140461282e0cfbb3aececc,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
       value: 1.7779851
       objectReference: {fileID: 0}
+    - target: {fileID: 5953834635218551989, guid: 49b2e50264140461282e0cfbb3aececc,
+        type: 3}
+      propertyPath: _TransitionTo
+      value: 
+      objectReference: {fileID: 931102873}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49b2e50264140461282e0cfbb3aececc, type: 3}
 --- !u!1 &283925110
@@ -518,6 +538,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1305135004}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &931102873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5544181533011844533, guid: 628420ec5a15b4dcfa7a18874400516f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1161793940}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1161793940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -525,6 +551,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1467703722812023179, guid: 628420ec5a15b4dcfa7a18874400516f,
+        type: 3}
+      propertyPath: _TransitionTo
+      value: 
+      objectReference: {fileID: 1646744024}
     - target: {fileID: 5544181533011844522, guid: 628420ec5a15b4dcfa7a18874400516f,
         type: 3}
       propertyPath: m_Follow
@@ -666,6 +697,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0679fc775556342c7aaba85147b64e6b, type: 3}
+--- !u!1 &1646744024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3065543203454678726, guid: 49b2e50264140461282e0cfbb3aececc,
+    type: 3}
+  m_PrefabInstance: {fileID: 161423988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1823688464
 GameObject:
   m_ObjectHideFlags: 0

@@ -137,6 +137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3065543203454678724}
   - component: {fileID: 3065543203454678727}
+  - component: {fileID: 5953834635218551989}
   m_Layer: 0
   m_Name: Hex Orbit Camera
   m_TagString: Untagged
@@ -205,3 +206,17 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 3065543203420963406}
+--- !u!114 &5953834635218551989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3065543203454678726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e384926821a6c44129a9b3d1bb0789b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TransitionTo: {fileID: 0}
+  _TransitionInput: Jump
