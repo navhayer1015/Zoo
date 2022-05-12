@@ -18,9 +18,9 @@ public class PanningMovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             transform.position = new Vector3(
-                transform.position.x + Input.GetAxis("Mouse Y") * Time.deltaTime * speed, 
+                transform.position.x + Input.GetAxis("Mouse X") * Time.deltaTime * speed, 
                 transform.position.y, 
-                transform.position.z + Input.GetAxis("Mouse X") * Time.deltaTime * speed);
+                transform.position.z + Input.GetAxis("Mouse Y") * Time.deltaTime * speed);
         }
     }
 }
