@@ -1,6 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
-    <ui:VisualElement name="keyValueEntry" style="flex-direction: row;">
-        <ui:Label text="Key:" display-tooltip-when-elided="true" name="lblKey" style="-unity-font-style: bold;" />
-        <ui:Label text="Value" display-tooltip-when-elided="true" name="lbValue" />
-    </ui:VisualElement>
-</ui:UXML>
