@@ -19,14 +19,21 @@ public class Biome : MonoBehaviour
     [SerializeField] List<GameObject>  _environments = new List<GameObject>();
     [SerializeField] GameObject _currentEnvironment;
     [SerializeField] private int _currentEnvironmentsIndex = 0;
-    
+
+    #region Unity Fuctions
+
+    private void Awake()
+    {
+        RefreshData();
+        SpawnAnimal();
+    }
+
+    #endregion
     #region Animal Properties
     [Button]
     public void SpawnAnimal()
     {
-        print(_biomeType.ToString());
         var spawnPoint = GameObject.Find(_biomeType.ToString()).transform.GetChild(0);
-        print(spawnPoint.name);
         _currentAnimal = Instantiate(_animals[_currentAmimalIndex], Vector3.zero, Quaternion.identity,spawnPoint.transform);
         _currentAnimalData = _currentAnimal.GetComponent<AnimalData>();
         _currentAnimal.transform.position = spawnPoint.transform.position;
