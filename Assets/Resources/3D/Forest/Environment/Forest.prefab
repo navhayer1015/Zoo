@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189006605799209494}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.261, z: 0}
+  m_LocalPosition: {x: 0.2594, y: 0.2418, z: 0.2054}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -149,9 +149,9 @@ MonoBehaviour:
   _biomeType: 1
   _animals:
   - {fileID: 2403585665250476658, guid: 8c2e982564c0a42028e5069883abe652, type: 3}
-  _currentAnimal: {fileID: 2403585665250476658, guid: 8c2e982564c0a42028e5069883abe652,
-    type: 3}
+  _currentAnimal: {fileID: 0}
   _currentAmimalIndex: 0
+  _currentAnimalData: {fileID: 0}
   _environments:
   - {fileID: 1671176600333328992}
   _currentEnvironment: {fileID: 1671176600333328992}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3793583999554058332}
   - component: {fileID: 2266468674514108163}
   m_Layer: 0
-  m_Name: Atric
+  m_Name: Arctic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,11 +116,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _biomeType: 0
-  _animals: []
+  _animals:
+  - {fileID: 7309231973202874708, guid: 18aa7ab7241a1418dae1e1a7c84d854a, type: 3}
   _currentAnimal: {fileID: 0}
   _currentAmimalIndex: 0
-  _environments: []
-  _currentEnvironment: {fileID: 0}
+  _currentAnimalData: {fileID: 0}
+  _environments:
+  - {fileID: 3767239009509808894}
+  _currentEnvironment: {fileID: 3767239009509808894}
   _currentEnvironmentsIndex: 0
 --- !u!1 &4003406378575482993
 GameObject:
@@ -146,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4003406378575482993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.355, y: -0.0026, z: 0}
+  m_LocalPosition: {x: -0.355, y: 0.252, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

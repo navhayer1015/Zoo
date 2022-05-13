@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using EasyButtons;
 using Unity.Mathematics;
-using Unity.VisualScripting.FullSerializer;
-using UnityEditor;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [Serializable]
@@ -28,12 +24,12 @@ public class Biome : MonoBehaviour
     [Button]
     public void SpawnAnimal()
     {
-        _currentAnimal = Instantiate(_animals[_currentAmimalIndex], _currentEnvironment.transform.GetChild(0).transform.position, Quaternion.identity);
-        var boxCollider = _currentAnimal.GetComponentInChildren<BoxCollider>();
-        var animalPos = _currentAnimal.transform.position;
-        animalPos = new Vector3(animalPos.x, animalPos.y + math.abs(boxCollider.bounds.size.y), animalPos.z);
-        _currentAnimal.transform.position = animalPos;
+        print(_biomeType.ToString());
+        var spawnPoint = GameObject.Find(_biomeType.ToString()).transform.GetChild(0);
+        print(spawnPoint.name);
+        _currentAnimal = Instantiate(_animals[_currentAmimalIndex], Vector3.zero, Quaternion.identity,spawnPoint.transform);
         _currentAnimalData = _currentAnimal.GetComponent<AnimalData>();
+        _currentAnimal.transform.position = spawnPoint.transform.position;
     }
     public void Next()
     {
