@@ -1,15 +1,28 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse; flex-wrap: wrap-reverse;">
-        <ui:VisualElement style="flex-direction: row;">
+    <ui:Template name="keyValueEntry" src="project://database/Assets/UI/keyValueEntry.uxml?fileID=9197481963319205126&amp;guid=7e7ba2a0b6b484aab873856c085e9a3c&amp;type=3#keyValueEntry" />
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: column-reverse; flex-wrap: wrap-reverse;">
+        <ui:VisualElement name="navigationPanel" style="flex-direction: row;">
             <ui:Button text="Previous" display-tooltip-when-elided="true" />
             <ui:Button text="Next" display-tooltip-when-elided="true" />
             <ui:Button text="Back" display-tooltip-when-elided="true" style="height: 39px; width: 116px;" />
         </ui:VisualElement>
-        <ui:VisualElement style="flex-grow: 1;">
-            <ui:VisualElement style="flex-grow: 1; width: 400px; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
+        <ui:VisualElement name="animalRoot" style="flex-grow: 1;">
+            <ui:VisualElement name="animalPanel" style="flex-grow: 1; width: 400px; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
                 <ui:Label text="Animal" display-tooltip-when-elided="true" name="lblName" style="-unity-font-style: bold; font-size: 41px;" />
                 <ui:Label text="scientific name" display-tooltip-when-elided="true" name="lblScientificName" style="-unity-font-style: italic; font-size: 16px;" />
-                <ui:Label text="A short description" display-tooltip-when-elided="true" name="lblFact" style="font-size: 18px;" />
+                <ui:Instance template="keyValueEntry" name="habitatEntry">
+                    <AttributeOverrides element-name="lblKey" text="Habitat:" />
+                    <AttributeOverrides element-name="lbValue" text="Habitat 1, Habitat 2" />
+                </ui:Instance>
+                <ui:Instance template="keyValueEntry" name="sizeEntry">
+                    <AttributeOverrides element-name="lblKey" text="Size:" />
+                    <AttributeOverrides element-name="lbValue" text="N cm high, N cm wide" />
+                </ui:Instance>
+                <ui:Instance template="keyValueEntry" name="dietEntry">
+                    <AttributeOverrides element-name="lblKey" text="Diet:" />
+                    <AttributeOverrides element-name="lbValue" text="diet description" />
+                </ui:Instance>
+                <ui:Label text="A short fact about the animal." display-tooltip-when-elided="true" name="lblFact" style="font-size: 18px;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
