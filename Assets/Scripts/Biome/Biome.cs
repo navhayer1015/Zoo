@@ -68,6 +68,12 @@ public class Biome : MonoBehaviour
     {
         DestroyImmediate(_currentAnimal);
     }
+
+    public AnimalData GetAnimalDataFromCurrentAnimal()
+    {
+        return _currentAnimal.GetComponent<AnimalData>();
+    }
+
     #endregion
     #region Load Data List
     [Button]
