@@ -2,9 +2,9 @@
     <ui:Template name="keyValueEntry" src="project://database/Assets/UI/keyValueEntry.uxml?fileID=9197481963319205126&amp;guid=7e7ba2a0b6b484aab873856c085e9a3c&amp;type=3#keyValueEntry" />
     <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: column-reverse; flex-wrap: wrap-reverse;">
         <ui:VisualElement name="navigationPanel" style="flex-direction: row;">
-            <ui:Button text="Previous" display-tooltip-when-elided="true" />
-            <ui:Button text="Next" display-tooltip-when-elided="true" />
-            <ui:Button text="Back" display-tooltip-when-elided="true" style="height: 39px; width: 116px;" />
+            <ui:Button text="Previous" display-tooltip-when-elided="true" name="btnPrevious" />
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="btnNext" />
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="btnBack" style="height: 39px; width: 116px;" />
         </ui:VisualElement>
         <ui:VisualElement name="animalRoot" style="flex-grow: 1;">
             <ui:VisualElement name="animalPanel" style="flex-grow: 1; width: 400px; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9c107ef0d4f5f4bbe6e0deea61dc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animalName: 
+  _animalName: Tiger
   _scientificNames: []
   _shortFact: 
   _diet: 
