@@ -1,0 +1,28 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="root" style="flex-grow: 1; flex-direction: column-reverse; flex-wrap: wrap-reverse;">
+        <ui:VisualElement name="navigationPanel" style="flex-direction: row;">
+            <ui:Button text="Previous" display-tooltip-when-elided="true" name="btnPrevious" />
+            <ui:Button text="Next" display-tooltip-when-elided="true" name="btnNext" />
+            <ui:Button text="Back" display-tooltip-when-elided="true" name="btnBack" style="height: 39px; width: 116px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="animalRoot" style="flex-grow: 1;">
+            <ui:VisualElement name="animalPanel" style="flex-grow: 1; width: 400px; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
+                <ui:Label text="Animal" display-tooltip-when-elided="true" name="lblName" style="-unity-font-style: bold; font-size: 41px;" />
+                <ui:Label text="scientific name" display-tooltip-when-elided="true" name="lblScientificName" style="-unity-font-style: italic; font-size: 16px;" />
+                <ui:VisualElement name="habitatEntry" style="flex-direction: row;">
+                    <ui:Label text="Habitat:" display-tooltip-when-elided="true" name="lblHabitatKey" style="-unity-font-style: bold;" />
+                    <ui:Label text="habitat" display-tooltip-when-elided="true" name="lblHabitatValue" />
+                </ui:VisualElement>
+                <ui:VisualElement name="sizeEntry" style="flex-direction: row;">
+                    <ui:Label text="Size:" display-tooltip-when-elided="true" name="lblSizeKey" style="-unity-font-style: bold;" />
+                    <ui:Label text="size" display-tooltip-when-elided="true" name="lblSizeValue" />
+                </ui:VisualElement>
+                <ui:VisualElement name="dietEntry" style="flex-direction: row;">
+                    <ui:Label text="Diet:" display-tooltip-when-elided="true" name="lblDietKey" style="-unity-font-style: bold;" />
+                    <ui:Label text="diet" display-tooltip-when-elided="true" name="lblDietValue" />
+                </ui:VisualElement>
+                <ui:Label text="A short fact about the animal." display-tooltip-when-elided="true" name="lblFact" style="font-size: 18px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
