@@ -17,6 +17,7 @@ public class Biome : MonoBehaviour
     [SerializeField] List<GameObject> _animals = new List<GameObject>();
     [SerializeField] GameObject _currentAnimal;
     [SerializeField] private int _currentAmimalIndex = 0;
+    [SerializeField] private AnimalData _currentAnimalData;
     
     [Header("Environment Data")]
     [SerializeField] List<GameObject>  _environments = new List<GameObject>();
@@ -32,6 +33,7 @@ public class Biome : MonoBehaviour
         var animalPos = _currentAnimal.transform.position;
         animalPos = new Vector3(animalPos.x, animalPos.y + math.abs(boxCollider.bounds.size.y), animalPos.z);
         _currentAnimal.transform.position = animalPos;
+        _currentAnimalData = _currentAnimal.GetComponent<AnimalData>();
     }
     public void Next()
     {
@@ -61,7 +63,6 @@ public class Biome : MonoBehaviour
         {
             _currentAnimal = _animals[_currentAmimalIndex];
         }
-
         SpawnAnimal();
     }
     void DestroyAnimal()
@@ -71,7 +72,7 @@ public class Biome : MonoBehaviour
 
     public AnimalData GetAnimalDataFromCurrentAnimal()
     {
-        return _currentAnimal.GetComponent<AnimalData>();
+        return _currentAnimalData;
     }
 
     #endregion
