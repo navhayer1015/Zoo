@@ -31,6 +31,7 @@ public class Biome : MonoBehaviour
         _currentAnimalData = _currentAnimal.GetComponent<AnimalData>();
         _currentAnimal.transform.position = spawnPoint.transform.position;
     }
+    [Button]
     public void Next()
     {
         DestroyAnimal();
@@ -46,6 +47,7 @@ public class Biome : MonoBehaviour
         }
         SpawnAnimal();
     }
+    [Button]
     public void Previous()
     {
         DestroyAnimal();
