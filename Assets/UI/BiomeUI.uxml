@@ -6,7 +6,7 @@
             <ui:Button text="Back" display-tooltip-when-elided="true" name="btnBack" style="height: 39px; width: 116px;" />
         </ui:VisualElement>
         <ui:VisualElement name="animalRoot" style="flex-grow: 1;">
-            <ui:VisualElement name="animalPanel" style="flex-grow: 1; width: 400px; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
+            <ui:VisualElement name="animalPanel" style="flex-grow: 1; width: 30%; background-color: rgb(241, 227, 194); padding-left: 15px; padding-right: 15px; padding-top: 15px; padding-bottom: 15px;">
                 <ui:Label text="Animal" display-tooltip-when-elided="true" name="lblName" style="-unity-font-style: bold; font-size: 41px;" />
                 <ui:Label text="scientific name" display-tooltip-when-elided="true" name="lblScientificName" style="-unity-font-style: italic; font-size: 16px;" />
                 <ui:VisualElement name="habitatEntry" style="flex-direction: row;">
