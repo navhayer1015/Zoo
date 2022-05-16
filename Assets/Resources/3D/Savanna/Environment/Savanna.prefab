@@ -36,6 +36,7 @@ Transform:
   - {fileID: 37892356567082931}
   - {fileID: 1382424354025084161}
   - {fileID: 8983183378761454370}
+  - {fileID: 3494311865535756575}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -303,6 +304,116 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4727162862512674, guid: 7adcc5ca25de8e543ad11014ec7de3d3,
     type: 3}
   m_PrefabInstance: {fileID: 1386986589941710627}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8485099006371341217
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5733798094085133302}
+    m_Modifications:
+    - target: {fileID: 3565086395575602380, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_Name
+      value: Savanna Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 39.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TransitionAndFocusOn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CameraTransition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 5733798094085133302}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 65148be0d634540c78b093f72f39635b, type: 3}
+--- !u!224 &3494311865535756575 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5025853047028865726, guid: 65148be0d634540c78b093f72f39635b,
+    type: 3}
+  m_PrefabInstance: {fileID: 8485099006371341217}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8981427276179089778
 PrefabInstance:
