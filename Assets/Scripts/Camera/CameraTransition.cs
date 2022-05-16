@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 
@@ -8,7 +6,7 @@ using UnityEngine;
 public class CameraTransition : MonoBehaviour
 {
     [SerializeField]
-    GameObject _TransitionTo;
+    CinemachineVirtualCamera _TransitionTo;
 
     [SerializeField]
     string _TransitionInput;
@@ -21,7 +19,15 @@ public class CameraTransition : MonoBehaviour
 
     public void Transition()
     {
-        _TransitionTo.SetActive(true);
+        _TransitionTo.gameObject.SetActive(true);
         gameObject.SetActive(false);
+    }
+
+    public void TransitionAndFocusOn(Transform focusTarget)
+    {
+        _TransitionTo.Follow = focusTarget;
+        _TransitionTo.LookAt = focusTarget;
+        
+        Transition();
     }
 }
