@@ -1,0 +1,56 @@
+{
+    "name": "Camera Controls",
+    "maps": [
+        {
+            "name": "Camera Controls",
+            "id": "bc39a062-6e7b-4006-acba-5d7ab7dafde9",
+            "actions": [
+                {
+                    "name": "Look Around",
+                    "type": "Value",
+                    "id": "0cafa968-3865-41b8-a905-1b26c3c2976d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Mouse Drag",
+                    "id": "1b9e9fdf-6520-4b25-9379-c4ca6603100c",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look Around",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "18a89e88-ed86-4aa5-ad1e-cd544b76e260",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look Around",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "510f9a50-c1dd-4cea-8ba9-fc1880e4d99e",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look Around",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

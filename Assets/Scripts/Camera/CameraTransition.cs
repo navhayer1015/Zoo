@@ -1,6 +1,8 @@
 using System;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Users;
 
 [RequireComponent(typeof(CinemachineVirtualCameraBase))]
 public class CameraTransition : MonoBehaviour
@@ -9,12 +11,21 @@ public class CameraTransition : MonoBehaviour
     CinemachineVirtualCamera _TransitionTo;
 
     [SerializeField]
-    string _TransitionInput;
+    InputAction _TransitionInput;
 
-    void Update()
+    void OnEnable()
     {
-        if(Input.GetButtonDown(_TransitionInput))
-            Transition();
+        _TransitionInput.performed += OnInputReceived;
+    }
+
+    void OnDisable()
+    {
+        _TransitionInput.performed -= OnInputReceived;
+    }
+
+    void OnInputReceived(InputAction.CallbackContext callbackContext)
+    {
+        Transition();
     }
 
     public void Transition()

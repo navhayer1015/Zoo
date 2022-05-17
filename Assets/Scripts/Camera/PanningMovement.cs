@@ -1,26 +1,47 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PanningMovement : MonoBehaviour
 {
-    public float speed = 1.0f;
+    [SerializeField]
+    InputActionReference _PanAction;
     
-    // Start is called before the first frame update
+    [SerializeReference]
+    float _speed = 1.0f;
+
+    Vector3 _initialPosition;
+
     void Awake()
     {
+        _initialPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnEnable()
     {
-        if (Input.GetMouseButton(0))
-        {
-            transform.position = new Vector3(
-                transform.position.x + Input.GetAxis("Mouse X") * Time.deltaTime * speed, 
-                transform.position.y, 
-                transform.position.z + Input.GetAxis("Mouse Y") * Time.deltaTime * speed);
-        }
+        _PanAction.action.Enable();
+        _PanAction.action.performed += Move;
+    }
+
+    void OnDisable()
+    {
+        _PanAction.action.Disable();
+        _PanAction.action.performed -= Move;
+    }
+
+    void Move(InputAction.CallbackContext context)
+    {
+        transform.position = new Vector3(
+            transform.position.x + context.ReadValue<Vector2>().x * Time.deltaTime * _speed, 
+            transform.position.y, 
+            transform.position.z + context.ReadValue<Vector2>().y * Time.deltaTime * _speed);
+    }
+
+    public void Reset()
+    {
+        transform.position = _initialPosition;
     }
 }
