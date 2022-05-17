@@ -121,8 +121,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animalName: Wolf
-  _scientificNames: []
-  _shortFact: 
-  _diet: 
-  _habitat: 
-  _size: 
+  _scientificNames:
+  - Canis lupus
+  _shortFact: Wolves howl to communicate. if alone, a wolf may howl to attract the
+    attention of his pack. Packs howl together to send territorial messages from
+    one pack to another.
+  _diet: carnivorous
+  _habitat: tundra, woodlands, forests, grasslands and deserts
+  _size: 'height: 80-85 cm; weight: 23-80 kg'

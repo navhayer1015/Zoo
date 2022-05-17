@@ -100,9 +100,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9c107ef0d4f5f4bbe6e0deea61dc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animalName: Eagle
-  _scientificNames: []
-  _shortFact: 
-  _diet: 
-  _habitat: 
-  _size: 
+  _animalName: Golden eagle
+  _scientificNames:
+  - Aquila chrysaetos
+  _shortFact: 'Golden eagles are excellent hunters. They often work in pairs while
+    hunting: one eagle drives the prey to its waiting partner.The talons on their
+    feet kill and carry the prey, while the beak is only for eating.'
+  _diet: carnivorous
+  _habitat: tundra, shrublands, grasslands, coniferous forests, farmland, areas along
+    rivers and streams
+  _size: 'wingspan: 1.8-2.3 m; weight: 2.8-6.7 kg'

@@ -120,9 +120,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9c107ef0d4f5f4bbe6e0deea61dc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animalName: Tiger
-  _scientificNames: []
-  _shortFact: 
-  _diet: 
-  _habitat: 
-  _size: 
+  _animalName: Bengal tiger
+  _scientificNames:
+  - Panthera tigris tigris
+  _shortFact: Since tigers hunt mostly at dusk and dawn their stripes help them hide
+    in the shadows of tall grasses. They stalk and pounce because they are not able
+    to chase prey a long distance.
+  _diet: carnivorous
+  _habitat: tropical forests of the Indian sub-continent
+  _size: 'height: 90-110 cm; weight: 100-260 kg'

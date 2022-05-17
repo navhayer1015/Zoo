@@ -132,9 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9c107ef0d4f5f4bbe6e0deea61dc5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animalName: Elephant
-  _scientificNames: []
-  _shortFact: 
-  _diet: 
-  _habitat: 
-  _size: 
+  _animalName: African savanna elephant
+  _scientificNames:
+  - Loxodonta africana
+  _shortFact: "An elephant\u2019s skin is 2.5cm thick in most places.  The folds
+    and wrinkles in their skin can retain up to 10 times more water than flat skin
+    does, which helps to cool them down."
+  _diet: grasses, plants, fruits
+  _habitat: subtropical and temperate forests, dry and seasonally flooded grasslands,
+    and woodlands, wetlands and agricultural land
+  _size: 'height: 2.2-3.2m; weight: 3,000-6,000 kg'
