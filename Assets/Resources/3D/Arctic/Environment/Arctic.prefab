@@ -452,11 +452,16 @@ PrefabInstance:
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
@@ -466,7 +471,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
@@ -476,8 +491,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetBiome
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: CameraTransition, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: BiomeView, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
@@ -486,8 +511,18 @@ PrefabInstance:
       objectReference: {fileID: 3770075742397853424}
     - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 2266468674514108163}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8983874808641554131, guid: 65148be0d634540c78b093f72f39635b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Biome, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65148be0d634540c78b093f72f39635b, type: 3}

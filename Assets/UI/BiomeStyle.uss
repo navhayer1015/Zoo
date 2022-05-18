@@ -1,0 +1,50 @@
+Label {
+    white-space: normal;
+}
+
+.entry-key {
+    -unity-font-style: bold;
+}
+
+.entry-value {
+}
+
+#lblScientificName {
+    -unity-font-style: italic;
+}
+
+.title {
+    -unity-font-style: bold;
+    font-size: 41px;
+}
+
+#lblFact {
+    font-size: 18px;
+}
+
+.stretch-panel {
+    flex-grow: 1;
+}
+
+#animalPanel {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 30%;
+    background-color: rgba(255, 247, 208, 255);
+}
+
+.horizontal-layout {
+    flex-direction: row;
+}
+
+.navigation-button {
+    width: 100px;
+    height: 30px;
+}
+
+#root {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}

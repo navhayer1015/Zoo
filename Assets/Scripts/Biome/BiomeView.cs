@@ -48,9 +48,14 @@ public class BiomeView : MonoBehaviour
         onBackButtonPressed.Invoke();
     }
 
-    public void InitForBiome(Biome biome)
+    public void SetBiome(Biome biome)
     {
         _biome = biome;
+    }
+
+    public void InitForBiome(Biome biome)
+    {
+        SetBiome(biome);
         UpdateAnimalInfo();
     }
 
